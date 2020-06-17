@@ -27,6 +27,7 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const { author } = site.siteMetadata
 
   return (
     <Helmet

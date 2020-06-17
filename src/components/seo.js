@@ -34,15 +34,15 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s`}
+      titleTemplate={`%s | ${author}`}
       meta={[
         {
           name: `description`,
-          content: `Meticulous web developer with over 3 years of front end experience and passion for Javascript especially React.js`,
+          content: metaDescription,
         },
         {
           property: `og:title`,
-          content: "Yutthana Yahan",
+          content: `${title} | ${author}`,
         },
         {
           property: `og:image`,
@@ -50,27 +50,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:description`,
-          content: `Meticulous web developer with over 3 years of front end experience and passion for Javascript especially React.js`,
+          content: metaDescription,
         },
         {
           property: `og:type`,
           content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `Portfolio`,
-        },
-        {
-          name: `twitter:creator`,
-          content: "Yutthana Yahan",
-        },
-        {
-          name: `twitter:title`,
-          content: "Yutthana Yahan site",
-        },
-        {
-          name: `twitter:description`,
-          content: `Meticulous web developer with over 3 years of front end experience and passion for Javascript especially React.js`,
         },
       ].concat(meta)}
     />
